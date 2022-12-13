@@ -1,0 +1,47 @@
+{
+  "geocoded_waypoints": [
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJPRjznEr40YUR4bvV0G3n73g",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "university"
+      ]
+    },
+    {
+      "geocoder_status": "OK",
+      "place_id": "ChIJhQcO7Bz50YURys8p0rKRjAg",
+      "types": [
+        "street_address"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "bounds": {++},
+      "copyrights": "Map data ©2022 INEGI",
+      "legs": [
+        {
+          "distance": {++},
+          "duration": {
+            "text": "10 min",
+            "value": 611
+          },
+          "end_address": "Av. Insurgentes Nte. 848, Vallejo Poniente, Gustavo A. Madero, 07790 Ciudad de México, CDMX, México",
+          "end_location": {++},
+          "start_address": "Av. Juan de Dios Bátiz S/N, Nueva Industrial Vallejo, Gustavo A. Madero, 07738 Ciudad de México, CDMX, México",
+          "start_location": {++},
+          "steps": [++],
+          "traffic_speed_entry": [++],
+          "via_waypoint": [++]
+        }
+      ],
+      "overview_polyline": {++},
+      "summary": "Eje Central Lázaro Cárdenas",
+      "warnings": [++],
+      "waypoint_order": [++]
+    }
+  ],
+  "status": "OK"
+}
