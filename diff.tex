@@ -1,0 +1,1049 @@
+%  LaTeX support: latex@mdpi.com 
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL ./Sustainability-Full/main.tex   Sun Nov  6 15:48:56 2022
+%DIF ADD ./sustainability/main.tex        Fri Dec 16 19:45:28 2022
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+%=================================================================
+\documentclass[sustainability,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal and change "submit" to "accept". The document class line would be, e.g., \documentclass[preprints,article,accept,moreauthors,pdftex]{mdpi}. This is especially recommended for submission to arXiv, where line numbers should be removed before posting. For preprints.org, the editorial staff will make this change immediately prior to posting.
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% acoustics, actuators, addictions, admsci, adolescents, aerospace, agriculture, agriengineering, agronomy, ai, algorithms, allergies, alloys, analytica, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biotech, birds, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinpract, clockssleep, cmd, coasts, coatings, colloids, colorants, commodities, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryptography, crystals, csmf, ctn, curroncol, currophthalmol, cyber, dairy, data, dentistry, dermato, dermatopathology, designs, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecologies, econometrics, economies, education, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, ent, entomology, entropy, environments, environsciproc, epidemiologia, epigenomes, est, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, foundations, fractalfract, fuels, futureinternet, futureparasites, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gels, genealogy, genes, geographies, geohazards, geomatics, geosciences, geotechnics, geriatrics, hazardousmatters, healthcare, hearts, hemato, heritage, highthroughput, histories, horticulturae, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, ijerph, ijfs, ijgi, ijms, ijns, ijtm, ijtpp, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmmp, jmp, jmse, jne, jnt, jof, joitmc, jor, journalmedia, jox, jpm, jrfm, jsan, jtaer, jzbg, kidney, kidneydial, knowledge, land, languages, laws, life, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrology, micro, microarrays, microbiolres, micromachines, microorganisms, microplastics, minerals, mining, modelling, molbank, molecules, mps, msf, mti, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nri, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, pollutants, polymers, polysaccharides, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, publications, quantumrep, quaternary, qubs, radiation, reactions, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, ruminants, safety, sci, scipharm, seeds, sensors, separations, sexes, signals, sinusitis, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, sports, standards, stats, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, taxonomy, technologies, telecom, test, textiles, thalassrep, thermo, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, viruses, vision, waste, water, wem, wevj, wind, women, world, youth, zoonoticdis 
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, book, bookreview, briefreport, casereport, comment, commentary, communication, conferenceproceedings, correction, conferencereport, entry, expressionofconcern, extendedabstract, datadescriptor, editorial, essay, erratum, hypothesis, interestingimage, obituary, opinion, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, systematicreview, supfile, technicalnote, viewpoint, guidelines, registeredreport, tutorial
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. If eps figures are used, remove the option pdftex and use LaTeX and dvi2pdf.
+
+%=================================================================
+% MDPI internal commands
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2022}
+\copyrightyear{2022}
+%\externaleditor{Academic Editor: Firstname Lastname}
+\datereceived{} 
+%\daterevised{} % Only for the journal Acoustics
+\dateaccepted{} 
+\datepublished{} 
+%\datecorrected{} % Corrected papers include a "Corrected: XXX" date in the original paper.
+%\dateretracted{} % Corrected papers include a "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%------------------------------------------------------------------
+% The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+%\pdfoutput=1
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, cleveref, amsthm, hyphenat, natbib, hyperref, footmisc, url, geometry, newfloat, caption
+\usepackage{algorithm2e}
+
+%=================================================================
+%DIF 68a68-109
+% para el código JSON %DIF > 
+\usepackage{listings}  %DIF > 
+\usepackage{xcolor} %DIF > 
+ %DIF > 
+\definecolor{lightgray}{rgb}{.9,.9,.9} %DIF > 
+\definecolor{darkgray}{rgb}{.4,.4,.4} %DIF > 
+\definecolor{purple}{rgb}{0.65, 0.12, 0.82} %DIF > 
+\definecolor{darkblue}{rgb}{.4, .4, .8} %DIF > 
+ %DIF > 
+\lstdefinelanguage{JavaScript}{ %DIF > 
+  keywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break}, %DIF > 
+  keywordstyle=\color{blue}\bfseries, %DIF > 
+  ndkeywords={class, export, boolean, throw, implements, import, this}, %DIF > 
+  ndkeywordstyle=\color{darkgray}\bfseries, %DIF > 
+  identifierstyle=\color{black}, %DIF > 
+  sensitive=false, %DIF > 
+  comment=[l]{//}, %DIF > 
+  morecomment=[s]{/*}{*/}, %DIF > 
+  commentstyle=\color{purple}\ttfamily, %DIF > 
+  stringstyle=\color{darkblue}\ttfamily, %DIF > 
+  morestring=[b]', %DIF > 
+  morestring=[b]" %DIF > 
+} %DIF > 
+ %DIF > 
+\lstset{ %DIF > 
+   language=JavaScript, %DIF > 
+   backgroundcolor=\color{lightgray}, %DIF > 
+   extendedchars=true, %DIF > 
+   basicstyle=\scriptsize\ttfamily, %DIF > 
+   showstringspaces=false, %DIF > 
+   showspaces=false, %DIF > 
+   numbers=left, %DIF > 
+   numberstyle=\tiny, %DIF > 
+   numbersep=8pt, %DIF > 
+   tabsize=2, %DIF > 
+   breaklines=true, %DIF > 
+   showtabs=false, %DIF > 
+   captionpos=b %DIF > 
+} %DIF > 
+%================================================================= %DIF > 
+ %DIF > 
+%================================================================= %DIF > 
+%DIF -------
+%% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{Healthcare recommender system based on medical specialties, patient profiles, and geospatial information}
+
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Healthcare recommender system based on medical specialties, patient profiles and geospatial information}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{0000-0001-8289-6979} % Miguel
+\newcommand{\orcidauthorB}{0000-0003-4454-8791} % Rolando
+\newcommand{\orcidauthorC}{0000-0002-8420-3520} % Giovanni
+\newcommand{\orcidauthorD}{0000-0001-7992-9901} % Kwok
+
+% Authors, for the paper (add full first names)
+\Author{
+	Miguel Torres-Ruiz $^{1}$\orcidA{}, 
+	Rolando Quintero $^{1,*}$\orcidB{}, 
+	Giovanni Guzman $^{1}$\orcidC{} 
+	and Kwok Tai Chui $^{2}$\orcidD{}}
+
+%\longauthorlist{yes}
+
+% MDPI internal command: Authors, for metadata in PDF
+\AuthorNames{Miguel Torres-Ruiz, Rolando Quintero, Giovanni Guzman and Kwok Tai Chui}
+
+% MDPI internal command: Authors, for citation in the left column
+\AuthorCitation{Torres-Ruiz, M.;  Quintero, R.; Guzman, G.; Tai Chui, K.}
+% If this is a Chicago style journal: Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad Centro de Investigación en Computación (CIC), Instituto Politécnico Nacional (IPN), CDMX, México; mtorresru@ipn.mx\\
+$^{2}$ \quad Department of Electronic Engineering and Computer Science, School of Science and Technology, Hong Kong Metropolitan University, Hong Kong, China}
+
+% Contact information of the corresponding author
+\corres{Correspondence: rquintero@ipn.mx; Tel.: +52(55)5729 6000 ext. 56577}
+
+% Current address and/or shared authorship
+%\firstnote{Current address: Affiliation 3.} 
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+%DIF 118c160
+%DIF < \abstract{The global outburst of COVID-19 introduced severe issues concerning the capacity and adoption of healthcare systems and how vulnerable citizen classes might be affected. The pandemic generated the most remarkable transformation of health services, appropriating the increase of new information and communication technologies to bring sustainability to health services. This paper proposes a novel, methodological, and collaborative approach based on patient-centered technology, which consists of a recommender system architecture to assist the health service level according to medical specialties. The system provides recommendations according to the user profile of the citizens, and a ranked list of medical facilities. Thus, we propose a health attention factor to compute semantically the similarity between medical specialties and offer medical centers with response capacity, health service type, and close user geographic location. The recommender system was tested in diverse districts of Mexico City, and the spatial visualization of the medical facilities filtering by the recommendations is displayed in a Web-GIS application.}
+%DIF -------
+\abstract{The global outburst of COVID-19 introduced severe issues concerning the capacity and adoption of healthcare systems and how vulnerable citizen classes might be affected. The pandemic generated the most remarkable transformation of health services, appropriating the increase of new information and communication technologies to bring sustainability to health services. This paper proposes a novel, methodological, and collaborative approach based on patient-centered technology, which consists of a recommender system architecture to assist the health service level according to medical specialties. The system provides recommendations according to the user profile of the citizens and a ranked list of medical facilities. Thus, we propose a health attention factor to semantically compute the similarity between medical specialties and offer medical centers with response capacity, health service type, and close user geographic location. Thus, considering the challenges described in the state-of-the-art, this approach tackles issues related to recommenders in mobile devices and the diversity of items in the healthcare domain, incorporating semantic and geospatial processing. The recommender system was tested in diverse districts of Mexico City, and the spatial visualization of the medical facilities filtering by the recommendations is displayed in a Web-GIS application.} %DIF > 
+%DIF -------
+
+% Keywords
+\keyword{Recommender system; health attention factor algorithm; application ontology; semantic similarity, Web-GIS application} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Advances in Respiratory Medicine
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+
+%\noindent This is an obligatory section in “Advances in Respiratory Medicine”, whose goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What is the implication of the main finding?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \setcounter{section}{-1} %% Remove this when starting to work on the template.
+
+\section{Introduction}
+
+The global outburst of the new coronavirus (SARS-CoV-2) has introduced severe concerns regarding the capacity and adaption of healthcare systems and specifically about how vulnerable citizen classes might be affected \citep{lancet2020covid}. The COVID-19 pandemic has generated the most significant transformation and disruption of many services, including healthcare and health emergency management, using digital tools, which have increased rapidly to bring sustainability to health services. \citet{moazzami2020covid} and \citet{katz2020covid} assert that a pandemic seriously alters global health systems in transmission, control, and saturation but also restricts resources and facilities, medical personnel, vaccines, access, and mobility issues. 
+
+Thus, digital technologies such as Artificial Intelligence, blockchain, machine learning, the Internet of Things, and extensive health data repositories have contributed to changing and addressing the traditional methods to provide health services to citizens and innovating in different paradigms such as mobility from a disease perspective to patients’ perspective, well-being citizens and life quality. Moreover, the digital transformation focused on healthcare is continuously impacting medical approaches \citep{sousa2019decision}; \citep{massaro2021digital}. Nowadays, this transformation and innovation implicate new stakeholders conducted by massive patient data from various datasets in different formats, computational intelligence models and algorithms, artificial intelligence-based techniques, novel pervasive platforms for exchanging and monitoring patients, and service providers for obtaining valuable information, patterns, trends and insights in the healthcare domain.
+
+According to \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{kraus2021digital}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{kraus2021digital}}%DIFAUXCMD
+}\DIFaddend , there are five research classifications concerning the digital transformation of healthcare: (1) patient-centered technology, (2) operational efficiency of organizations, (3) managerial implications, (4) impact on workforce practice, and (5) socio-economic aspects. By taking into consideration this categorization, sustainability in healthcare should cover all these issues to adopt new strategies, methodologies, and innovative applications to provide health value services-based technologies and responses to face a future and global health emergency in the global world.
+
+Since the outbreak and lockdown restrictions worldwide by the COVID-19 pandemic, diverse initiatives to maintain the activity of health services have been implemented. For instance, virtual medical consultations have increased in many countries \citep{banerjee2020teleconsultation}, and some medical departments go on using online technology to monitor non-critical patients \citep{pinar2021preliminary}; \citep{tamayo2020evaluation}. According to \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{shahed2021supply}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{shahed2021supply}}%DIFAUXCMD
+}\DIFaddend , the pandemic has disturbed the supply chains around the world, generating issues related to supporting the medical responses, lack of essential medical supplies, deficiency in accessing and mobility to clinical and hospitals to treat medical specialties, and the resilience of citizens. Indeed, 94%DIF <  of Fortune 1000 companies are suffering interruptions in their supply chains, 75% of these companies have experimented a negative impact on their business operations, and 55% of these companies are scheduling to reduce their growth plans.
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{According to the study presented by \mbox{%DIFAUXCMD
+\citep{rosenbaum2020untold}}%DIFAUXCMD
+, }\DIFdelend \DIFaddbegin \DIFadd{\% of 1,000 Fortune medical and supplier companies are suffering interruptions in their supply chains, 75\% of these companies have experimented with a negative impact on their business operations, and 55\% of these companies are scheduling to reduce their growth plans.
+Thus, \mbox{%DIFAUXCMD
+\citet{rosenbaum2020untold} }%DIFAUXCMD
+presented a study that asserted }\DIFaddend the pandemic transformed the use of health services to attend to different emergency conditions in patients without COVID-19, showing a general reduction in the treatment of medical specialties. The study suggests that this phenomenon is due to (1) negligence by patients with severe or life-threatening disorders to pursue care, (2) release of the emergency units for non-emergency disorders, or (3) displacement of emergency unit care to other locations, such as telemedicine consultations. Moreover, the analytical study reported at least in the United States, the visits and admissions to emergency units decreased by more than 40%DIF <  in all the healthcare systems. This fact was probably generated by the citizens' response to the sanitary emergency messaging concerning COVID-19 in the country. Thus, the population avoided assisting emergency units because of the fear of being exposed to the virus, particularly in these healthcare spaces.
+\DIFaddbegin \DIFadd{\% in all the healthcare systems. This fact was probably generated by the citizens' response to the sanitary emergency messaging concerning COVID-19 in the country. Thus, the population avoided assisting emergency units because of the fear of being exposed to the virus, particularly in these healthcare spaces.
+}\DIFaddend 
+
+\DIFaddbegin {\DIFadd{According to \mbox{%DIFAUXCMD
+\citet{kumar2016approaches}}%DIFAUXCMD
+, the recommendation task is considered like classification and ranking prediction model. Consequently, there are different and widely used techniques to generate such recommendations. In this context, \mbox{%DIFAUXCMD
+\citet{lika2014facing} }%DIFAUXCMD
+categorized five approaches in the recommender systems: (1) Collaborative Filtering (CF) technique that recommends elements to the user considering previous characteristics of other users with similar conditions based on user profiles. (2) Content-based Filtering (CB) suggests elements that are similar to others based on a given previous user profile. (3) Social Filtering (SF) that recommends elements considering suggestions and preferences taken from social networks (particularly friends). (4) Knowledge-based System (KB) recommends elements to the users relating particular domain knowledge considering a similarity value to assess the matching grade; and (5) Hybrid Technique (HB) combines two techniques to recommend elements to the user.}}  
+
+{\DIFadd{There are different research issues and challenges concerning those approaches to improve the recommendations in recommender systems. Thus, \mbox{%DIFAUXCMD
+\citet{kumar2016approaches} }%DIFAUXCMD
+and \mbox{%DIFAUXCMD
+\citet{lika2014facing} }%DIFAUXCMD
+described a relevant research gap in implicit and explicit methods to collect ratings for the matrix, which reflects a $sparsity$ problem in which there are no scores to know the satisfaction level of users. The $cold-start$ problem is associated with missing information concerning offering recommendations to new users in the system because it does not have ratings to initiate the task. Moreover, the $scalability$ issue is a big challenge because it is difficult to find open architectures and algorithms to increase the functionality of the recommender systems and handle dynamic and large datasets or preferences’ collections. Concerning the $privacy\ and\ robustness$ problems is essential to guarantee the users that their preferences and confidential information are safe in the system. Thus, $cybersecurity$ approaches are needed to ensure the data of users and the confidence to access the recommender systems. In addition, $recommenders\ in\ mobile\ devices$ are relevant to design a new generation of RS focused on location-based services. Nowadays, geographic information plays an important role to generate recommendations for many services, employing social media information to analyze preferences and tastes. Thus, it demands more computational solutions concerning effective mobile user interfaces and efficient algorithms to retrieve information on the preferences and tastes of users. Finally, the $diversity\ of\ items$ implies the inference and knowledge discovery based on novel techniques to provide particular recommendations, considering a broad scenario of preferences. To date, there is little research related to this issue to improve the accuracy of the recommendations.}}
+
+{\DIFadd{Considering the challenges of the state-of-the-art, we propose an approach centered to tackle issues related to recommenders in mobile devices and the diversity of items in the healthcare domain. Thus, we focused on incorporating semantic and geospatial processing in a particular RS as well as an attention factor index to generate recommendations to users based on medical specialties and their near facilities.}}
+
+\DIFaddend Therefore, we perceive the following issues concerning medical attention: less attention has been focused on geographic access to health services, hospital access, response capacity at the local level within urban areas, and lack of access to medical specialties according to the responsiveness and infrastructure. Thus, we propose a novel approach based on patient-centered technology. In this way, we have designed a recommender system that consists of a health service level, which is defined by a health attention factor. This metric is composed of two key components, the geospatial location of the health facilities and the medical specialties required by the patients.
+
+The \DIFaddbegin \DIFadd{main contribution of this research work is related to the health attention factor that takes into consideration different criteria to compute the recommendation list based on the following: user-required specialty, current location, arrival time from some volunteer-collaborative service (Google Maps or Wazee), medical facility, occupation factor, number of medical doctors classified by specialty, and similarity metric.  Finally, this is a customizable approach because some criteria could be modified to meet other requirements, such as buffer distance, similarity metric, and among others.
+}
+
+\DIFadd{The }\DIFaddend rest of the paper is structured as follows: the next section comprises the literature review on intelligent systems and approaches focused on health services, and their implications during the COVID-19 pandemic, Section 3 describes the methodology, Section 4 investigates the results, and the last section discusses the key findings of our research.
+
+\section{Related work}
+
+\DIFdelbegin \DIFdel{Intelligent systems }\DIFdelend \DIFaddbegin \DIFadd{Systems }\DIFaddend based on Artificial Intelligence (AI) have permeated many areas of life. Thus, healthcare is not an exception; multiple approaches have supported health services with this type of tool\DIFdelbegin \DIFdel{; for example, in the interface between people and AI. Such interfaces could alleviate the shortage of skilled health workers, help busy medical professionals, and improve typically the quality of healthcare. }\DIFdelend \DIFaddbegin \DIFadd{. }\DIFaddend There are many challenges to achieving \DIFdelbegin \DIFdel{this}\DIFdelend \DIFaddbegin \DIFadd{the aforementioned}\DIFaddend , such as investigating biases in clinical decision-making, and lack of trust in AI by people unaffiliated with these technologies, among others. 
+\DIFdelbegin \DIFdel{A study is conducted in \mbox{%DIFAUXCMD
+\citep{lai2021human} }%DIFAUXCMD
+in which a literature review is carried out to examine previous research, }\DIFdelend \DIFaddbegin 
+
+\DIFadd{The study conducted by \mbox{%DIFAUXCMD
+\citet{lai2021human} }%DIFAUXCMD
+}\DIFaddend identify gaps, and propose future research directions. The authors \DIFdelbegin \DIFdel{report }\DIFdelend \DIFaddbegin \DIFadd{reported }\DIFaddend that there are limited studies \DIFdelbegin \DIFdel{on }\DIFdelend \DIFaddbegin \DIFadd{concerning }\DIFaddend the interactive collaboration \DIFdelbegin \DIFdel{process }\DIFdelend \DIFaddbegin \DIFadd{task }\DIFaddend in healthcare and that there is no good integration between people and AI\DIFdelbegin \DIFdel{, so work should be done on the adoption and improvement of the perception of AI in long-term organizations}\DIFdelend .
+
+On the other hand, with the health crisis that has tied the world in recent years, telemedicine services have been essential for many users to access health services beyond this required assistance by the pandemic emergency related to COVID-19. \DIFdelbegin \DIFdel{In \mbox{%DIFAUXCMD
+\citep{chauhan2022implications}}%DIFAUXCMD
+, }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{chauhan2022implications} }%DIFAUXCMD
+identified }\DIFaddend fundamental success factors relevant to telemedicine services \DIFdelbegin \DIFdel{are identified and grouped }\DIFdelend \DIFaddbegin \DIFadd{and grouped them }\DIFaddend under some contextual criteria. The \DIFdelbegin \DIFdel{causal relationships between them are explored to classify hospitals that provide telemedicine services during the pandemic. The }\DIFdelend findings revealed that \DIFdelbegin \DIFdel{technological issues provide a substantial causal impact; In other words, }\DIFdelend the more complicated the technology is, the more resistance there is to \DIFdelbegin \DIFdel{adopt it. In \mbox{%DIFAUXCMD
+\citep{baudier2022digital}}%DIFAUXCMD
+, the factors that }\DIFdelend \DIFaddbegin \DIFadd{adopting it. \mbox{%DIFAUXCMD
+\citet{baudier2022digital} }%DIFAUXCMD
+examined the factors to }\DIFaddend predict the intention to use medical teleconsultation\DIFdelbegin \DIFdel{are examined by extending the unified theory of acceptance and use of technology (UTAUT2) with the three dimensions of beliefs, trust, and self-efficacy. The authors carried out their study by applying a survey of patients who had used a teleconsultation platform during the pandemic period. The }\DIFdelend \DIFaddbegin \DIFadd{, the }\DIFaddend results highlight the importance of trust beliefs and self-efficacy in digital health services adoption.
+
+So, in this context is necessary to understand what is required of a new type of company that provides health services using new remote work technologies. \citet{chakraborty2021health} attempts to understand the status of these health technology companies in providing healthcare services through a study of \DIFdelbegin \DIFdel{the }\DIFdelend scientific publications on the matter. With a total of 110 journals reviewed, 76 articles were found to meet the inclusion criteria, and only five studies portrayed the status of new health technology companies in the provision of healthcare services. \DIFdelbegin \DIFdel{Acceptance of services depends on the effectiveness and affordability of the service. }\DIFdelend Similar results are presented \DIFdelbegin \DIFdel{in \mbox{%DIFAUXCMD
+\citep{qahtan2022review}}%DIFAUXCMD
+, based on three main objectives such as identifying research gaps, challenges, and open problems in the academic literature. So, the }\DIFdelend \DIFaddbegin \DIFadd{by \mbox{%DIFAUXCMD
+\citet{qahtan2022review}}%DIFAUXCMD
+, the }\DIFaddend study concluded that despite the efforts to develop safer and more private systems for the health industry, none meets the necessary development attributes.
+
+Another critical aspect to consider \DIFdelbegin \DIFdel{and arise based on the experience of using remote health services during the COVID-19 pandemic }\DIFdelend is that access to these services must be viable and available to all people regardless of their socioeconomic status. For this reason, there must be criteria for evaluating health technologies (HTA). According to \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{drummond2022challenges}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{drummond2022challenges}}%DIFAUXCMD
+}\DIFaddend , there are a few challenges to such an evaluation, taking into account that resources are limited to run HTAs locally. Another problem is the \DIFdelbegin \DIFdel{limited availability of local }\DIFdelend \DIFaddbegin \DIFadd{low availability of domestic }\DIFaddend data to complete the \DIFdelbegin \DIFdel{economic }\DIFdelend \DIFaddbegin \DIFadd{profitable }\DIFaddend models and the timely \DIFdelbegin \DIFdel{availability of relevant }\DIFdelend \DIFaddbegin \DIFadd{readiness of pertinent }\DIFaddend HTAs, among others. \DIFdelbegin \DIFdel{A further group of challenges is related to the structural characteristics of the health system. These include central or local restrictions on using HTAs or differences in how reimbursement decisions are made in different infrastructures. }\DIFdelend Many Latin American countries have parallel health systems in which mandatory health insurance or social security systems for workers, subsidized public programs, and private mechanisms coexist. \citet{meleddu2020public} \DIFdelbegin \DIFdel{mentions }\DIFdelend \DIFaddbegin \DIFadd{asserted }\DIFaddend that research has shown that people make health spending decisions based on their income, political \DIFdelbegin \DIFdel{attitudes}\DIFdelend \DIFaddbegin \DIFadd{ideology}\DIFaddend , and demographics\DIFdelbegin \DIFdel{and tend to see }\DIFdelend \DIFaddbegin \DIFadd{; and be liable to notice }\DIFaddend public healthcare as a normal good that is \DIFdelbegin \DIFdel{hardly available. Users }\DIFdelend \DIFaddbegin \DIFadd{barely available. Thus, users }\DIFaddend demand health services that meet their expectations. 
+\DIFdelbegin \DIFdel{Health spending is related to the health services that a patient can access.
+}\DIFdelend 
+
+In general, we consider that patients can have access to public health services, \DIFdelbegin \DIFdel{which vary in quality depending on each country. Some }\DIFdelend \DIFaddbegin \DIFadd{some }\DIFaddend other patients have \DIFaddbegin \DIFadd{also }\DIFaddend access to private health services\DIFaddbegin \DIFadd{, }\DIFaddend that are more expensive. Therefore, public services often cannot provide health services remotely, making it necessary for people to travel efficiently to the most convenient health centers. \DIFdelbegin \DIFdel{In citep}%DIFDELCMD < {%%%
+\DIFdel{mollahaliloglu2021change}%DIFDELCMD < }%%%
+\DIFdel{, data on the distributive imbalance of patients }\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{mollahaliloglu2021change} }%DIFAUXCMD
+mention that }\DIFaddend from the years 2002 to 2016 \DIFdelbegin \DIFdel{presents }\DIFdelend policies of redistribution of health services \DIFdelbegin \DIFdel{applied. The effect of these policies on the distribution of human resources in health shows }\DIFdelend \DIFaddbegin \DIFadd{were applied, resulting in }\DIFaddend a continuous decrease in inequalities in the geographical distribution of the human workforce in health. Thus, applying policies that impact the quality of health services is critical. For example, \citet{sharma2021public} presents the accessibility measure for health services by using public transport, the travel time, and the number of transit stops. In addition, \citet{PEREIRA2021113773} shows how transport-accessibility analytics can provide actionable insights to improve healthcare coverage and responsiveness. 
+\DIFdelbegin \DIFdel{By using network distance metrics, the vulnerable population living in areas with poor access to healthcare facilities is computed. They then use the balanced-floating catchment area (BFCA) indicator to estimate spatial, income, and racial inequalities in hospital access.
+}\DIFdelend 
+
+%DIF < Nuevo
+\DIFdelbegin \DIFdel{A large amount }\DIFdelend \DIFaddbegin \DIFadd{Medical professionals have a lot }\DIFaddend of medical information\DIFdelbegin \DIFdel{has brought many difficulties for medical professionals }\DIFdelend \DIFaddbegin \DIFadd{, which has made it difficult }\DIFaddend to make patient-oriented decisions. \DIFdelbegin \DIFdel{These difficulties lead us to the need to apply recommendation }\DIFdelend \DIFaddbegin \DIFadd{Recommender }\DIFaddend systems (RS) \DIFdelbegin \DIFdel{in the healthcare domain to help both patients and medical professionals to make more efficient and accuratehealth-related decisions}\DIFdelend \DIFaddbegin \DIFadd{can help in making such decisions so that they are more accurate}\DIFaddend . According to \citet{tran2021recommender} three main aspects must be considered in RS: a) the context of use\DIFdelbegin \DIFdel{that describes the environment in which all elements interact with each other}\DIFdelend , b) users are the final consumers of RS, and c) the elements are the inputs that users are looking for. The authors also mention that there are four basic recommendation techniques: 1) collaborative filtering (CF) recommendations \DIFdelbegin \DIFdel{are based on the idea that if patients share similar disease profiles/health conditions , then they should have }\DIFdelend \DIFaddbegin \DIFadd{consider that a patient who has similar }\DIFaddend health \DIFaddbegin \DIFadd{conditions (profiles) to other patients, should then have similar health }\DIFaddend care treatments \DIFdelbegin \DIFdel{/services Similar}\DIFdelend \DIFaddbegin \DIFadd{to the latter}\DIFaddend . 2) content-based filtering \DIFaddbegin \DIFadd{approach }\DIFaddend (CB) \DIFdelbegin \DIFdel{this approach suggests health services that fit }\DIFdelend \DIFaddbegin \DIFadd{recommends appropriate health services to }\DIFaddend the patient's health \DIFdelbegin \DIFdel{/disease situation and are }\DIFdelend \DIFaddbegin \DIFadd{situation and }\DIFaddend similar to those \DIFdelbegin \DIFdel{assigned in the past}\DIFdelend \DIFaddbegin \DIFadd{previously assigned}\DIFaddend . 3) \DIFdelbegin \DIFdel{Knowledge-Based Recommendation (KB) This approach creates recommendations based }\DIFdelend \DIFaddbegin \DIFadd{knowledge-based recommendation approach (KBR) generates recommendations founded }\DIFaddend on knowledge about \DIFdelbegin \DIFdel{items}\DIFdelend \DIFaddbegin \DIFadd{commodities}\DIFaddend , explicit user preferences, and \DIFdelbegin \DIFdel{a set of constraints that describe }\DIFdelend \DIFaddbegin \DIFadd{constraints that express }\DIFaddend dependencies between user preferences and \DIFdelbegin \DIFdel{item }\DIFdelend \DIFaddbegin \DIFadd{object }\DIFaddend properties. 4) hybrid recommendation \DIFdelbegin \DIFdel{(HyR) the idea of this approach is to combine }\DIFdelend \DIFaddbegin \DIFadd{approach (HR) tries to mix }\DIFaddend the aforementioned recommendation \DIFdelbegin \DIFdel{techniques }\DIFdelend \DIFaddbegin \DIFadd{strategies }\DIFaddend to take advantage of one \DIFdelbegin \DIFdel{approach }\DIFdelend \DIFaddbegin \DIFadd{technique }\DIFaddend and correct the \DIFdelbegin \DIFdel{disadvantages }\DIFdelend \DIFaddbegin \DIFadd{weaknesses }\DIFaddend of another. \citet{pincay2019health} presents the results of a comprehensive and cutting-edge study of RS used in the health \DIFdelbegin \DIFdel{field}\DIFdelend \DIFaddbegin \DIFadd{care context}\DIFaddend , also known as health recommender systems.
+\DIFdelbegin \DIFdel{The PRISMA framework has been used to provide information on the approaches and strategies used in the recommendation areas.
+}\DIFdelend 
+
+Recently, multiple approaches have been generated to solve this RS problem. \citet{shaikh2022recommender} \DIFdelbegin \DIFdel{propose }\DIFdelend \DIFaddbegin \DIFadd{proposed }\DIFaddend a framework for \DIFdelbegin \DIFdel{a }\DIFdelend \DIFaddbegin \DIFadd{an }\DIFaddend RS for dengue patients in healthcare applications. In this framework, machine learning algorithms are used, especially content-based, collaborative and hybrid approaches. In the same vein, \citet{vairale2019recommendation} \DIFdelbegin \DIFdel{have discussed some }\DIFdelend \DIFaddbegin \DIFadd{analyzed }\DIFaddend recent research in the field of \DIFdelbegin \DIFdel{diet and exercise, which focused mainly on individualized recommendations }\DIFdelend \DIFaddbegin \DIFadd{a healthy lifestyle, in which }\DIFaddend based on clinical data, \DIFdelbegin \DIFdel{taking into account your food and physical activity preferences, and your nutritional needs. \mbox{%DIFAUXCMD
+\citet{fasidi2019rule} }%DIFAUXCMD
+present }\DIFdelend \DIFaddbegin \DIFadd{individualized recommendations are made. \mbox{%DIFAUXCMD
+\citet{fasidi2019rule} }%DIFAUXCMD
+presented }\DIFaddend the rule-based naive Bayesian classifier (RNBC) as a prediction \DIFdelbegin \DIFdel{and therapy guide for heart disease risk . The dataset is scanned only once, offline, while subsequent scanning of the dataset is prevented by designing the classification rule. }\DIFdelend \DIFaddbegin \DIFadd{model for heart risk conditions and therapy handbook. }\DIFaddend \citet{gohari2020significance} introduced the \DIFdelbegin \DIFdel{SBTAR (Significance-Based Confidence-Aware Recommendation)method, which employed a novel confidence metric based on the idea of item importance .
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{\mbox{%DIFAUXCMD
+\citet{sahoo2019intelligence} }%DIFAUXCMD
+mention }\DIFdelend \DIFaddbegin \DIFadd{significance-based confidence-aware recommendation method (SBTAR), which operates a trust metric that employs the commodity importance paradigm. \mbox{%DIFAUXCMD
+\citet{sahoo2019intelligence} }%DIFAUXCMD
+mentioned }\DIFaddend that health RS \DIFdelbegin \DIFdel{are one of the new technologies used to extract additional information from }\DIFdelend \DIFaddbegin \DIFadd{can be used to obtain additional information concerning }\DIFaddend a person's \DIFdelbegin \DIFdel{health caredata. By measuring the similarity of choices made across patients, these systems identify preferred hospitals. Therefore, in the medical sector, they play an important role. \mbox{%DIFAUXCMD
+\citet{waqar2019adaptive} }%DIFAUXCMD
+propose }\DIFdelend \DIFaddbegin \DIFadd{medical care. Such systems identify preferred hospitals by computing the similarity between choices made by patients. \mbox{%DIFAUXCMD
+\citet{waqar2019adaptive} }%DIFAUXCMD
+proposed }\DIFaddend an adaptive algorithm for the effective generation of medical recommendations. \DIFdelbegin \DIFdel{Specific physician-related attributes are identified through a survey. By adding treatments to patients}\DIFdelend \DIFaddbegin \DIFadd{The system could be improved by adding patients' treatments }\DIFaddend and symptoms of a particular \DIFdelbegin \DIFdel{disease, the system could be further improved. }%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{\mbox{%DIFAUXCMD
+\citet{mazeh2020personal} }%DIFAUXCMD
+proposed an architecture }\DIFdelend \DIFaddbegin \DIFadd{illness. \mbox{%DIFAUXCMD
+\citet{mazeh2020personal} }%DIFAUXCMD
+proposed a model }\DIFaddend for a RS based on \DIFdelbegin \DIFdel{patient data storage (PDS), which aims to improve user confidentiality without losing }\DIFdelend \DIFaddbegin \DIFadd{the storage of patient data and focused on improving confidentiality while maintaining }\DIFaddend the reliability of the recommendation. \DIFdelbegin \DIFdel{A limitation of this work is the data sets used to evaluate the proposed model. Privacy-preserving }\DIFdelend \DIFaddbegin \DIFadd{In the model, }\DIFaddend collaborative filtering, personal data storage, and \DIFaddbegin \DIFadd{the }\DIFaddend content-based \DIFdelbegin \DIFdel{model are used in the architecture. The database does not include individual data sets that would represent individual service providers in both applications.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{approach are used to preserve confidentiality. }\DIFaddend \citet{sayeb2022graph} have aimed to present a graph-based RS to manage the COVID-19 crisis considering data from patients and medical personnel. The RS \DIFdelbegin \DIFdel{has initially analysed }\DIFdelend \DIFaddbegin \DIFadd{initially analyzed }\DIFaddend the medical records of the patients to \DIFdelbegin \DIFdel{find and decide }\DIFdelend \DIFaddbegin \DIFadd{determine }\DIFaddend which profile of medical personnel \DIFdelbegin \DIFdel{could help the efficiency of }\DIFdelend \DIFaddbegin \DIFadd{may help }\DIFaddend this patient in a crisis situation. \DIFdelbegin \DIFdel{Then the RS , taking into account the availability of the medical staff, }\DIFdelend \DIFaddbegin \DIFadd{Thus the RS }\DIFaddend will try to propose other doctors with the same profile and the closest competencies \DIFdelbegin \DIFdel{. }\DIFdelend \DIFaddbegin \DIFadd{and abilities. 
+}
+
+\DIFaddend Similarly, \citet{zhang2017idoctor} proposed \DIFdelbegin \DIFdel{an }\DIFdelend \DIFaddbegin \DIFadd{the }\DIFaddend iDoctor system to provide users with \DIFdelbegin \DIFdel{personalised }\DIFdelend \DIFaddbegin \DIFadd{personalized }\DIFaddend medical recommendations. This \DIFdelbegin \DIFdel{system explores }\DIFdelend \DIFaddbegin \DIFadd{application examines }\DIFaddend users' emotions and preferences \DIFdelbegin \DIFdel{about doctors through }\DIFdelend \DIFaddbegin \DIFadd{regarding doctors by means of }\DIFaddend their ratings and reviews. 
+\DIFaddbegin 
+
+\DIFadd{Community detection is a topic of relevance in social network analysis, \mbox{%DIFAUXCMD
+\citet{luo2021symmetric} }%DIFAUXCMD
+investigate the performance of community detectors based on non-negative symmetric matrix factorization (SNMF) with scaling factor adjustment. Several SNMF schemes are improved by adjusting the scale factor in a nonnegative multiplicative update (NMU) scheme in a linear or non-linear strategy, thereby introducing new community detectors. The results indicate that they outperform original SNMFs in predicting the potential community of unlabeled nodes.
+}
+
+\DIFaddend \citet{narducci2015recommender} presented a social network called HealthNet, where a recommendation component is integrated to suggest the doctors and hospitals that best fit a specific patient profile. \DIFdelbegin \DIFdel{In HealthNet, a patiententers their }\DIFdelend \DIFaddbegin \DIFadd{Based on patient's }\DIFaddend health data, \DIFdelbegin \DIFdel{such as conditions, treatments (drugs, surgeries, or side effects), health indicators (blood pressure, body mass index, blood levels, etc.), doctors consulted, and hospitalisations. Based on the input data, the system searches for similar patients stored in the database }\DIFdelend \DIFaddbegin \DIFadd{the database is searched for patients with similar conditions. }\DIFaddend (Eqn. \ref{eqn:sim_pacientes}).
+
+\begin{equation}
+	\label{eqn:sim_pacientes}
+	s(a,b)  = \alpha \frac{\sum_{c_a\in C_a,c_b\in C_b} s_c(c_a, c_b)}{|C_a|+|C_b|} + (1-\alpha)\frac{\sum_{t_a\in T_a,t_b\in T_b} s_t(t_a, t_b)}{|T_a|+|T_b|}
+\end{equation}
+where $a$ y $b$ are patients, $C_x$ is the set of conditions \DIFdelbegin \DIFdel{that afflict }\DIFdelend \DIFaddbegin \DIFadd{of }\DIFaddend the patient $x$, $T_x$ is the set of treatments for the patient $x$, $\alpha$ is a parameter \DIFdelbegin \DIFdel{that allows regulating the relationship between the }\DIFdelend \DIFaddbegin \DIFadd{for regulating the ratio between }\DIFaddend contributions of conditions and treatments. $s_c(c_a, c_b)$ is the similarity between two conditions: in the case that $c_a = c_b$ the similarity $s_c(c_a, c_b) = \log \frac{|C|}{|P_{c_a}|}$, being $C$ the universe of conditions and $P_{c_a}$ is the set of patients with condition $c_a$; in the case that $c_a \neq c_b$ the similarity $s_c(c_a, c_b) = \frac{1}{\delta (c_a,c_b)}$, being $\delta$ the length of the shortest path between $c_a$ y $c_b$ in the hierarchy of diseases. $s_t(t_a, t_b)$ is the similarity between two treatments \DIFdelbegin \DIFdel{, }\DIFdelend and is equal to 1 if $t_a = t_b$, 0 otherwise.
+
+Now, based on this similarity of patients, a rating is calculated for doctors (Eqn. \ref{eqn_scoreDoc}) and hospitals (Eqn. \ref{eqn:scoreH}) with respect to patient $p$.
+
+\begin{equation}
+	\label{eqn_scoreDoc}
+	scoreDoc(d,p) = \sum_{\rho \in P}s(p,\rho)\cdot r_\rho (d)
+\end{equation}
+where $P$ is the set of registered patients and $r_\rho (d)$ is the rating given by the patient $\rho$ to the doctor $d$.
+
+\begin{equation}
+	\label{eqn:scoreH}
+	scoreH(h,p) = \beta \left( \sum_{\rho \in P} s(p, \rho) \cdot r_\rho(h) \right) + (1-\beta) \cdot Q(h)
+\end{equation}
+where $r_\rho (h)$ is the rating given by the patient $\rho$ to the hospital $h$ and $Q(h)$ is a quality index of the hospital $h$ given by a rating authority.
+
+
+\section{The proposed approach}
+
+According to \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{neutens2015accessibility}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{neutens2015accessibility}}%DIFAUXCMD
+}\DIFaddend , the most common parameter to measure geographic access to healthcare services is the shortest distance or travel time to arrive near a medical unit. This metric is widely used and easy to compute and analyze, and therefore clear for conveying to policymakers. However, the most critical limitation of this metric is that it discharges the traffic congestion and the implicit events that originate from this condition. There are other potential approaches, such as the Floating Catchment Area (FCA) methods \citep{matthews2019using}\DIFdelbegin \DIFdel{, which computes }\DIFdelend \DIFaddbegin \DIFadd{. Thus, \mbox{%DIFAUXCMD
+\citet{matthews2019using} }%DIFAUXCMD
+computed the }\DIFaddend accessibility levels considering the following variables: the provider-to-population ratio of every health unit and the potential health demand regarding the infrastructure. Nevertheless, the limitation of this method concerns the overestimation of both health service demand and supply, which could induce untruthful accessibility estimation values.
+
+\DIFdelbegin \DIFdel{Thus}\DIFdelend \DIFaddbegin \DIFadd{Therefore}\DIFaddend , we propose a novel approach based on patient-centered technology according to the classification proposed by \DIFdelbegin \DIFdel{\mbox{%DIFAUXCMD
+\citep{kraus2021digital}}%DIFAUXCMD
+}\DIFdelend \DIFaddbegin \DIFadd{\mbox{%DIFAUXCMD
+\citet{kraus2021digital}}%DIFAUXCMD
+}\DIFaddend . In this way, we design a recommender system that consists of a health service level defined by a health attention factor. This metric is composed of two key components, the geospatial location of the health facilities and the medical specialties required by the patients. 
+
+The approach consists of a recommender system of health services considering the geographic location, the medical specialties defined within an application ontology, and the attention factor to offer the best health unit to treat a medical situation. So, when a medical condition is presented, the patient requires assistance at a medical facility for partial or complete medical attention. In this case, two scenarios could be presented: (1) the patient can readily identify the adequate medical unit by making a query in the recommender system, and it returns a set of medical centers to the patient according to geographic location criteria. (2) However, there is no \DIFdelbegin \DIFdel{a priori }\DIFdelend \DIFaddbegin \textit{\DIFadd{a priori}} \DIFaddend information about the most acceptable hospital for attending the emergency patient. It is possible that the nearest hospital does not have a doctor with a neurology specialty; so, according to this medical situation, a recommender system semantically processes the query to provide information concerning this health service. Therefore, the recommender system performs the following duties: semantic-based recommendations, profiling of answers, and map rendering. Figure~\ref{fig:arquitectura} presents the \DIFdelbegin \DIFdel{architecture and components }\DIFdelend \DIFaddbegin \DIFadd{processes }\DIFaddend of the recommender system to retrieve semantic medical information about the medical centers.
+
+\begin{figure}
+	\begin{center}
+		\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=1.0\textwidth]{fig_01.pdf}
+%DIFDELCMD < 	%%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=1.0\textwidth, trim={1cm 5cm 1cm 5cm}, clip]{Fig01.pdf}
+	\DIFaddendFL \end{center}
+	\caption{\DIFdelbeginFL \DIFdelFL{Architecture and components }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Processes }\DIFaddendFL of the \DIFaddbeginFL \DIFaddFL{proposed }\DIFaddendFL recommender system\label{fig:arquitectura}}
+\end{figure}
+
+\subsection{The medical application ontology}
+
+The medical application ontology was designed for semantic processing. This ontology conceptualizes the most essential medical specialties considering the Association of American Medical Colleges Standard (https://www.aamc.org/cim/). In this context, other medical ontologies were created according to their applications such as SNOMED \citep{cornet2008forty}, MedO \citep{fujita2010multiviews}, OBI Ontology \citep{bandrowski2016ontology}, GALEN \citep{rector2006ontological}, Gene Ontology \citep{gene2019gene}, among others.
+
+Those ontological representations are built with diverse \DIFdelbegin \DIFdel{languages }\DIFdelend \DIFaddbegin \DIFadd{computational environments }\DIFaddend such as Resource Description Framework (RDF), Ontology Web Language (OWL), and Open Biomedical Ontology (OBO)\DIFaddbegin \DIFadd{; all of them based on a symbolic language}\DIFaddend . The structures and \DIFdelbegin \DIFdel{syntaxes }\DIFdelend \DIFaddbegin \DIFadd{syntaxis }\DIFaddend to describe entities and relationships are very complex, and they contain up to 900,000 concepts in their topological structure. These features are difficult and slow to be semantically processed, and the medical specialties are not explicitly defined in such ontologies. Moreover, the interoperability of these public ontologies is a big challenge because, in production systems, the performance can decrease \DIFdelbegin \DIFdel{significatively }\DIFdelend \DIFaddbegin \DIFadd{significantly }\DIFaddend to several issues such as diverse access to different ontologies, translation among languages, different reasoning, and inference engines to provide semantic information from queries, and semantic information integration techniques.
+
+Thus, the proposed research proposes an application ontology that consists of a hierarchical structure based on an is-a relationship, with partitions associated with medical specialties. Summing up, the proposed ontology fits with the recommendations generated by the system with a conceptualization more suitable for querying medical specialties due to a single hierarchical description, specialized partitions, and granularity. We develop the proposed ontology with OWL-full language using the Protégé application with version 5.5. The root node of the ontology has three properties to perform the semantic processing: the first one establishes if the medical specialty is “diagnostic” or “therapeutic”. The second property \DIFdelbegin \DIFdel{designates the age scale of patients }\DIFdelend \DIFaddbegin \DIFadd{specifies the patient age defined by }\DIFaddend (“pediatric”, “adult”, “geriatric”, “all”), and the third \DIFdelbegin \DIFdel{describes }\DIFdelend \DIFaddbegin \DIFadd{depicts }\DIFaddend if the medical specialty is “organ-based”, “technique-based” or “both”. Figure~\ref{fig:ontologia} shows the application ontology to conceptualize \DIFdelbegin \DIFdel{the }\DIFdelend medical specialties.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{onto.pdf}
+	\end{center}
+	\caption{Application ontology representing medical specialties\label{fig:ontologia}}
+\end{figure}
+
+\subsection{The profiling and semantic processing tasks}
+
+The profiling task establishes a user \DIFdelbegin \DIFdel{profile }\DIFdelend \DIFaddbegin \DIFadd{personalization (profile) }\DIFaddend and the statement of the search \DIFdelbegin \DIFdel{type}\DIFdelend \DIFaddbegin \DIFadd{(query type)}\DIFaddend . So, the profile for each query \DIFdelbegin \DIFdel{contains the following information}\DIFdelend \DIFaddbegin \DIFadd{is composed of the following features}\DIFaddend :
+
+\begin{itemize}
+\item Health Service Type. The user \DIFdelbegin \DIFdel{specifies if he requires public or private }\DIFdelend \DIFaddbegin \DIFadd{defines if he demands private or public }\DIFaddend health services.
+\DIFdelbegin \DIFdel{;
+}\DIFdelend \item Medical Facilities. All units, centers, and hospitals that accomplish the \DIFdelbegin \DIFdel{type of health service }\DIFdelend \DIFaddbegin \DIFadd{health service type }\DIFaddend are shown.
+\item Medical Specialties. They \DIFdelbegin \DIFdel{require to select the specialties for each unit or hospital previously enrolled}\DIFdelend \DIFaddbegin \DIFadd{must identify the disciplines for each previously enlisted institution or medical center}\DIFaddend .
+\end{itemize}
+
+The semantic processing task is in charge of receiving the search type as an input parameter. The value of the search type defines the query to build in the application ontology using the SPARQL language. In this way, the semantic information concerning the medical centers, units, or hospitals is retrieved by taking into consideration the \DIFdelbegin \DIFdel{user’s statements }\DIFdelend \DIFaddbegin \DIFadd{statements of the user}\DIFaddend .
+
+Moreover, the \DIFdelbegin \DIFdel{search type }\DIFdelend \DIFaddbegin \DIFadd{type of type }\DIFaddend assumes one of \DIFdelbegin \DIFdel{three }\DIFdelend \DIFaddbegin \DIFadd{the following }\DIFaddend potential values: general, emergency, or profile-oriented. \DIFdelbegin \DIFdel{In the general }\DIFdelend \DIFaddbegin \DIFadd{Regarding the general type of }\DIFaddend search, the \DIFdelbegin \DIFdel{list of retrieved }\DIFdelend \DIFaddbegin \DIFadd{retrieved list of }\DIFaddend medical facilities is ranked \DIFdelbegin \DIFdel{according to }\DIFdelend \DIFaddbegin \DIFadd{taking into account }\DIFaddend the geospatial distances \DIFdelbegin \DIFdel{measured by }\DIFdelend \DIFaddbegin \DIFadd{that were measured according to }\DIFaddend the user’s \DIFdelbegin \DIFdel{position. In consequence}\DIFdelend \DIFaddbegin \DIFadd{location. In conclusion}\DIFaddend , the first medical facility is the nearest \DIFdelbegin \DIFdel{patient. In case of emergency }\DIFdelend \DIFaddbegin \DIFadd{user's patient. So, in an emergency case}\DIFaddend , the “ER” string is allocated to the \DIFdelbegin \DIFdel{search type variable}\DIFdelend \DIFaddbegin \DIFadd{variable 
+ of search type}\DIFaddend , and the \DIFdelbegin \DIFdel{previous steps }\DIFdelend \DIFaddbegin \DIFadd{preceding operations }\DIFaddend are made, but the \DIFdelbegin \DIFdel{query outcome only }\DIFdelend \DIFaddbegin \DIFadd{outcome just }\DIFaddend has medical facilities that supply emergency services. \DIFdelbegin \DIFdel{Finally, in }\DIFdelend \DIFaddbegin \DIFadd{In }\DIFaddend a profile-oriented query, all \DIFdelbegin \DIFdel{data stored }\DIFdelend \DIFaddbegin \DIFadd{the information provided }\DIFaddend in the user\DIFdelbegin \DIFdel{profile is employed to ask about }\DIFdelend \DIFaddbegin \DIFadd{'s account is used to find }\DIFaddend the closest medical facilities \DIFdelbegin \DIFdel{with the medical specialties described in the profile. The final result of this task is a list }\DIFdelend \DIFaddbegin \DIFadd{that offer the medical specializations mentioned in the account. This task will produce a collection }\DIFaddend of hospitals represented by the set $MF=\left\{mf_{1},mf_{2},\dots,\,mf_{n}\right\}$, where $MF$ is the set of medical facilities, centers, \DIFdelbegin \DIFdel{units }\DIFdelend or hospitals. 
+
+\subsection{The ranking attention factor}
+
+We propose a novel ranking algorithm for determining the health attention factor and sorting the medical facilities that accomplish a medical specialty. So, the algorithm computes the attention feature for a collection of medical units, centers, or hospitals numerically. For example, in an emergency such as a heart attack, it is desirable a doctor with a cardiology specialty to care about the patient. \DIFdelbegin \DIFdel{However}\DIFdelend \DIFaddbegin \DIFadd{Nevertheless}\DIFaddend , in the case that this \DIFdelbegin \DIFdel{medical }\DIFdelend \DIFaddbegin \DIFadd{doctor or }\DIFaddend specialist is unavailable, it is critical to \DIFdelbegin \DIFdel{compute the semantic similarity }\DIFdelend \DIFaddbegin \DIFadd{calculate the semantic similitude }\DIFaddend and identify all potential physicians with some corresponding knowledge \DIFaddbegin \DIFadd{competencies }\DIFaddend for treating the patient. 
+
+Consequently, we design the following equation to determine the number of doctors who can respond to an emergency involving a particular medical discipline. This value specifies the medical specialties semantically associated with the desired specialization, as indicated in the user profile. Let \DIFdelbegin %DIFDELCMD < {%%%
+\DIFdel{f}%DIFDELCMD < } %%%
+\DIFdelend \DIFaddbegin \DIFadd{$f$ }\DIFaddend be a function, where $MF_B$ is the number of \DIFdelbegin \DIFdel{hospitals }\DIFdelend \DIFaddbegin \DIFadd{medical facilities }\DIFaddend within a ratio obtained by using the buffer geographic operator from the current user geographic location, \textbf{S} is the \DIFdelbegin \DIFdel{set of all medical specialties described }\DIFdelend \DIFaddbegin \DIFadd{collection of all areas of medicine specified }\DIFaddend by the application ontology, \DIFaddbegin \DIFadd{and }\DIFaddend $\textbf{S}_{mf_{i}}$ is a \DIFdelbegin \DIFdel{subset and represents the number of medical disciplines offered by some }\DIFdelend \DIFaddbegin \DIFadd{subgroup that indicates the amount of clinical specialties provided by a particular }\DIFaddend medical facility. \DIFdelbegin \DIFdel{Finally, the value }\DIFdelend \DIFaddbegin \DIFadd{Equation \ref{eq_number_medical_doctors} is then utilized to extract the number }\DIFaddend of medical doctors for a \DIFdelbegin \DIFdel{specific hospitalis retrieved by applying Equation \ref{eq_number_medical_doctors}.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{certain hospital.
+}\DIFaddend %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < \begin{center}
+%DIFDELCMD < %%%
+\DIFdelend \begin{equation}
+\DIFdelbegin \DIFdel{related\_doctors}\DIFdelend \DIFaddbegin \DIFadd{\mbox{related\_doctors}}\DIFaddend (mf_{i}) = \sum_{\forall s \in \textbf{S}} \DIFdelbegin \DIFdel{medical\_doctors}\DIFdelend \DIFaddbegin \DIFadd{\mbox{medical\_doctors}}\DIFaddend (s, mf_{i})\,\ast\, \DIFdelbegin \DIFdel{sim}\DIFdelend \DIFaddbegin \DIFadd{\mbox{sim}}\DIFaddend (s, s_u),mf_{i} \in MF_{B} 
+\DIFdelbegin \DIFdel{. 
+}\DIFdelend \label{eq_number_medical_doctors}
+\end{equation}
+\DIFdelbegin %DIFDELCMD < \end{center}
+%DIFDELCMD <  
+
+%DIFDELCMD < %%%
+\DIFdel{Where $medical\_doctors(s, mf_{i})$ denotes }\DIFdelend \DIFaddbegin \DIFadd{where $\mbox{medical\_doctors}(s, mf_{i})$ represents }\DIFaddend the number of \DIFdelbegin \DIFdel{medical doctors}\DIFdelend \DIFaddbegin \DIFadd{health practitioners (doctors) }\DIFaddend with a specialty $s$ in the $mf_{i}$ \DIFdelbegin \DIFdel{hospital, and $similarity(s, s_u)$ determines }\DIFdelend \DIFaddbegin \DIFadd{medical facility, and $\mbox{sim}(s, s_u)$ calculates }\DIFaddend the semantic similarity between $s$ and $s_u$ according to the user profile described by $u$. Thus, to compute this similitude value, the semantic similarity proposed by Resnik \cite{resnik2011semantic} between two terms $t_1, t_2$ is applied. In this case, we use Equation \ref{eq_resnik_similarity}. 
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < \begin{center}
+%DIFDELCMD < %%%
+\DIFdelend \begin{equation}
+\DIFdelbegin \DIFdel{Sim}\DIFdelend %DIF > sim(t_1, t_2) =  \begin{matrix}{\max} \\ {t \in S(t_1, t_2)}\end{matrix}  [-log \, p(t)] 
+\DIFaddbegin \DIFadd{sim}\DIFaddend (t_1, t_2) =  \DIFdelbegin %DIFDELCMD < \begin{matrix}{max} \\ {t \in S(t_1, t_2)}\end{matrix}  %%%
+\DIFdelend \DIFaddbegin {\DIFadd{\max}} \DIFadd{_{t \in S(t_1, t_2)}  }\DIFaddend [\DIFdelbegin \DIFdel{-log \, }\DIFdelend \DIFaddbegin \DIFadd{- \log }\DIFaddend p(t)] 
+\label{eq_resnik_similarity}
+\end{equation}
+\DIFdelbegin %DIFDELCMD < \end{center}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{Where }\DIFdelend \DIFaddbegin \DIFadd{where }\DIFaddend $S(t_1, t_2)$ is the \DIFdelbegin \DIFdel{set }\DIFdelend \DIFaddbegin \DIFadd{collection }\DIFaddend of common ancestors of two terms $t_1$ and $t_2$. The Resnik similarity has a minimum of zero.
+
+\subsection{The map rendering task}
+This \DIFdelbegin \DIFdel{task interprets the obtained results from the ranking algorithmto display the medical facilities }\DIFdelend \DIFaddbegin \DIFadd{work utilizes Google Maps API version 2 to interpret the ranking algorithm's output and represent the healthcare centers }\DIFaddend on a map\DIFdelbegin \DIFdel{using Google Maps API version 2. Therefore, we employ this map server because the downloading, visualization, and responding times for requests in mobile devices are optimal, in constrast with }\DIFdelend \DIFaddbegin \DIFadd{. In contrast to }\DIFaddend other map servers\DIFaddbegin \DIFadd{, }\DIFaddend such as Yahoo Maps \DIFdelbegin \DIFdel{, }\DIFdelend and Microsoft Bing Maps, \DIFdelbegin \DIFdel{among others}\DIFdelend \DIFaddbegin \DIFadd{and among others, this map server provides superior download rate, display, and response times for mobile devices}\DIFaddend . Moreover, \DIFdelbegin \DIFdel{it is possible to }\DIFdelend \DIFaddbegin \DIFadd{we }\DIFaddend use a temporal \DIFdelbegin \DIFdel{layer to add different visual analysis options }\DIFdelend \DIFaddbegin \DIFadd{tile to add further visual analysis possibilities }\DIFaddend (markers, polygons, route lines\DIFdelbegin \DIFdel{, and change of map type}\DIFdelend ). This \DIFdelbegin \DIFdel{task processes the data input that contains a geographically ordered (general }\DIFdelend \DIFaddbegin \DIFadd{activity analyses the incoming data containing ordered geographically (generic }\DIFaddend and oriented-profile queries) or \DIFdelbegin \DIFdel{ranked (emergency search) list of hospitals to add }\DIFdelend \DIFaddbegin \DIFadd{sorted (urgent situation query) collection of institutions to count }\DIFaddend markers for all medical facilities \DIFdelbegin \DIFdel{enlisted }\DIFdelend \DIFaddbegin \DIFadd{included }\DIFaddend in the input list. \DIFdelbegin \DIFdel{A }\DIFdelend \DIFaddbegin \DIFadd{So, a }\DIFaddend geographic marker represents each medical facility, and a label \DIFdelbegin \DIFdel{that contains the name and related information of every medical center, the address, and the distance are }\DIFdelend \DIFaddbegin \DIFadd{containing the facility's name, and address. In addition the distance is }\DIFaddend measured in kilometers. So, to obtain an estimation of the time required to arrive at the desired location, we operate with Google Directions API. The developed query has the following pattern:
+
+\begin{center}
+\begin{dmath}
+https://maps.googleapis.com/maps/api/directions/json?\\
+origin=$latitude\_origin,longitude\_origin$\& \\
+destination=$latitude\_destination,longitude\_destination$\& \\
+key=$YOUR\_API\_KEY$
+\end{dmath}
+\end{center}
+
+On the order hand, it is possible to compute the geographic distance between the two locations (origin and destination), applying the Haversine function \cite{sinnott1984virtues}. See Equations \ref{eq_geographic_distance} - \ref{eq_c}.\\
+
+\begin{equation}
+\label{eq_geographic_distance}
+distance(o(lat_1, lon_1), d(lat_2, lon_2)) = R \times c
+\end{equation}
+
+\begin{equation}
+\label{eq_a}
+a = sin^2 { \left( \frac{rad \left( \Delta_{lat} \right)}{2} \right) } + cos \left( rad(x_1) \right) \times cos \left( rad(x_2) \right) \times sin^2 { \left( \frac{rad \left( \Delta_{lon} \right)}{2} \right) }
+\end{equation}
+
+\begin{equation}
+\label{eq_c}
+c = deg \left( 2 \times arcsin \left( min(1, \sqrt{a}) \right) \right)
+\end{equation}
+
+Where: \\
+$\Delta_{lon}=lon_2 - lon_1$ is the longitude coordinates difference. \\ 
+$\Delta_{lat}=lat_2 - lat_1$ is the latitude coordinates difference. \\
+$rad(value)$ is a function to \DIFdelbegin \DIFdel{convert }\DIFdelend \DIFaddbegin \DIFadd{transform }\DIFaddend $value$ from degrees to radians. \\
+$deg(value)$ is a function to \DIFdelbegin \DIFdel{convert }\DIFdelend \DIFaddbegin \DIFadd{transform }\DIFaddend $value$ from radians to degrees. \\
+$R$ equal to $6378.137$ kilometers \DIFdelbegin \DIFdel{, }\DIFdelend is the Earth\DIFaddbegin \DIFadd{'s }\DIFaddend radius. \\
+
+\DIFdelbegin \DIFdel{Finally, the complete pseudocode }\DIFdelend \DIFaddbegin {\DIFadd{\mbox{%DIFAUXCMD
+\citet{wu2021l1} }%DIFAUXCMD
+proposed an L$^3$F model to deal efficiently with the high-dimensional and sparse (HiDS) matrices coming from the recommender system. This model is based on the combination of the $L_1$ and $L_2$ norms to calculate its loss function. In said combination, the weights of the $L_1$ and $L_2$ norms are adaptively adjusted \mbox{%DIFAUXCMD
+\cite{li2022diversified, wu2021latent}}%DIFAUXCMD
+. Experiments showed that the model increases in robustness (due to the $L_1$ norm) and stability (due to the $L_2$ norm) when dealing with a HiDS matrix with outliers. Thus, we used a loss function based on $L_1$.}}
+
+{\DIFadd{On the other hand, the complete pseudo-code }\DIFaddend of this proposal is described in Algorithm \ref{algorithm_attention_factor}. \DIFaddbegin \DIFadd{This algorithm describes all the steps required to compute the adequate medical unit by combining the arrival times of all hospitals and the estimation of the attention factor; thus, we used a loss function based on L$_1$. In addition, this approach considers the medical specialty required by the mobile application user, their current location, and the specialties and medical doctors in each medical facility. Once the ranked list has been determined, the directions list must be requested to arrive from the current user's location to the high-ranked medical facility using Google directions. Then, from the response body, it is possible to obtain the point list to reach the target hospital.}}
+\DIFaddend 
+
+%% This declares a command \Comment
+%% The argument will be surrounded by /* ... */
+\SetKwComment{Comment}{/* }{ */}
+
+\begin{algorithm}
+\caption{Algorithm to \DIFdelbegin \DIFdel{compute }\DIFdelend \DIFaddbegin \DIFadd{generate }\DIFaddend the \DIFdelbegin \DIFdel{attention factor}\DIFdelend \DIFaddbegin \DIFadd{recommender list of medical facilities}\DIFaddend }
+\label{algorithm_attention_factor}
+%\KwData{$n \geq 0$}
+\DIFdelbegin %DIFDELCMD < \KwIn{ \\
+%DIFDELCMD <     $MF_{B} = \{ mf_{1}, mf_{2}, ..., mf_{n} \}$, set of medical facilities inside buffer R. \\
+%DIFDELCMD <     $s_{u}$, required speciality by the user. \\
+%DIFDELCMD <     $R$, search ratio to apply buffer operator. \\
+%DIFDELCMD <     $pat(mf_{i}) \,\, \forall \,\, mf_{i} \in MF$, current patients of $mf_{i}$. \\
+%DIFDELCMD <     $cap(mf_{i}) \,\, \forall \,\, mf_{i} \in MF$, maximum patients capacity of $mf_{i}$. \\
+%DIFDELCMD <     $P_{u}(lon_{u}, lat_{u}) \gets $ user current latitude and longitude.\\
+%DIFDELCMD <     $max(at(P_u, P_{mf_k})) \gets $ maximum arrival time. 
+%DIFDELCMD < }
+%DIFDELCMD < \KwOut{ \\
+%DIFDELCMD <     $AF_{B} = \{ mf_{1}, mf_{2}, ..., mf_{n} \}, \suchthat  af(mf_{i}) > af(mf_{k}), i<j \leq n$. \\
+%DIFDELCMD < }
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \KwIn{ \\
+    $MF_{B} = \{ mf_{1}, mf_{2}, ..., mf_{n} \}$, set of medical facilities inside buffer B. \\
+    $s_{u}$, specialty required by the user. \\
+    $R$, search ratio to apply buffer operator. \\
+    $pat(mf_{i}) \,\, \forall \,\, mf_{i} \in MF$, current patients of $mf_{i}$. \\
+    $cap(mf_{i}) \,\, \forall \,\, mf_{i} \in MF$, maximum patients capacity of $mf_{i}$. \\
+    $P_{u}(lon_{u}, lat_{u}) \gets $ user current latitude and longitude.\\
+    $max(at(P_u, P_{mf_k})) \gets $ maximum arrival time. 
+}
+\KwOut{ \\
+    $Route(P_{u}, AF_{B}(0))   = \{ p_1, p_2, ..., p_n \}$
+    % $AF_{B} = \{ mf_{1}, mf_{2}, ..., mf_{n} \}, \suchthat  af(mf_{i}) > af(mf_{k}), i<j \leq n$. \\
+}
+\DIFaddend 
+
+\For{$i = 1 \to n$} {
+    $P_{mf_{i}}(lon_{mf_i}, lat_{mf_i}) \gets$  $i-$medical facility latitude and longitude. \\
+    $\lvert{at(P_{u}, P_{mf_{i}})}\rvert$ \\
+    $related\_doctors(mf_{i})=0$ \\
+    \For{$j = 1 \to m \,\, \forall \,\, s_j \in \textbf{S}_{mf_{i}}$} {
+        $related\_doctors(mf_{i}) += medical\_doctors(s_j, mf_{i}) *  sim(s_j, s_u)$ \\     
+	}
+    $af(mf_{i}) = related\_doctors(mf_{i})*[1 - pat(mf_{i}) / cap(mf_{i})]$ \\
+    $af(mf_{i}) = af(mf_{i}) * [1 - at(P_u, mf_{i}) / max(at(P_u, P_{mf_k})]$
+}
+$AF_{B} = \{ mf_{1}, mf_{2}, ..., mf_{n} \}, \suchthat  af(mf_{i}) > af(mf_{k}), i<j \leq n$. \\
+\DIFaddbegin \DIFadd{$P_{origin} = P_{u}(lon_{u}, lat_{u})$. }\\
+\DIFadd{$P_{destination} = AF_{B}(0) \gets $ medical unit at index zero. }\\ 
+\DIFadd{$base\_url = https://maps.googleapis.com/maps/api/directions/json?$
+$response = base\_url + origin = P_{origin} \& destination = P_{destination} \& key = API\_KEY $. }\\
+\DIFadd{$Route(P_{u}, AF_{B}(0)) = response.routes.steps$
+}\DIFaddend \BlankLine
+\end{algorithm}
+
+\section{\DIFdelbegin \DIFdel{Tests }\DIFdelend \DIFaddbegin \DIFadd{Results }\DIFaddend and \DIFdelbegin \DIFdel{results}\DIFdelend \DIFaddbegin \DIFadd{discussion}\DIFaddend }
+
+%En esta sección se describe un resultado comparativo del algoritmo de factor de atención, con un conjunto de 4 hospitales calculados después de aplicar el operador buffer, a un radio de 1000 metros, a partir de la posición actual del usuario. En la Tabla 1 se describen los especialistas, así como parámetros del algoritmo, como son el número de pacientes así como la capacidad máxima de cada centro médico.
+
+%DIF >  Porcentaje de ocupación de los hospitaleS: 0.30, 0.33, 0.75, 0.416 
+\DIFaddbegin 
+
+\DIFaddend This section describes a comparative result of the attention factor algorithm, with a set of 4 medical facilities computed after applying the buffer operator, at a radius of 1,000 meters, from the user's geographic current position to the clinical units. Table 1 describes the medical specialties and the algorithm parameters, such as the number of patients and the maximum capacity of each medical center.
+
+\begin{table}[H] 
+\caption{Information on specialties and patient capacity of a group of hospitals.\label{table_hospital_info}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{CCCCCCCC}
+\toprule
+\textbf{Hospital} & \textbf{Patients} & \textbf{Capacity} & \textbf{Oncology} & \textbf{Cardiology} & \textbf{Obstetrics and \DIFdelbeginFL \DIFdelFL{Genycology}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Gynecology}\DIFaddendFL } & \textbf{Emergency Medicine} & \textbf{Nephrology} \\
+\midrule
+$mf_{1}$ & 15 & 50  & 5 & 1 & 3 & 2 & 3 \\
+$mf_{2}$ & 10 & 30  & 2 & 2 & 0 & 3 & 4 \\
+$mf_{3}$ & 60 & 80  & 6 & 2 & 5 & 3 & 2 \\
+$mf_{4}$ & 50 & 120 & 6 & 3 & 4 & 5 & 4 \\ 
+\bottomrule \DIFaddbeginFL \\
+\DIFaddendFL \end{tabularx}
+\end{table}
+\unskip
+
+\DIFaddbegin {\DIFadd{We observe that in each medical facility, medical doctors specialize in one of the following disciplines: oncology, cardiology, obstetrics and gynecology, emergency medicine, and nephrology. The occupation percentage ranges from $30\%$ (for $mf_1$) to $75\%$ ($mf_3$). According to these criteria, the sorting process to select the hospital is $mf_1, mf_2, mf_4$, and $mf_3$. Taking capacity into account, the following should be the preferences for attending the medical facility: $mf_4, mf_3, mf_1$, and $mf_2$.}}
+
+\DIFaddend On the other hand, Table 2 shows the values obtained by applying the Resnik similarity measure, as well as the attention factor, arrival time, and normalized values described in the previous section.
+
+% Por otra parte, en la Tabla XXX se muestran los valores obtenidos aplicado la medida de similitud de Resnik, así como el factor de atención, tiempo de arribo, y valores normalizados que fueron descritos en la sección anterior.
+
+\begin{table}[H] 
+\caption{The obtained values by applying the attention factor algorithm.\label{table_hospital_info}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{CCCCC}
+\toprule
+\textbf{Hospital} & \textbf{Arrival time (minutes)} & \textbf{Related Doctors} & \textbf{Attention Factor} & \textbf{Final Attention Factor} \\
+\midrule
+$mf_{1}$ & 12 & 8.1859241 & 5.7301469 & 1.1460293 \\
+$mf_{2}$ & 10 & 6.6240311 & 4.4160207 & 1.4720069 \\
+$mf_{3}$ & 15 & 12.373001 & 3.0932502 & 0.0000000 \\
+$mf_{4}$ & 13 & 14.466539 & 8.4388146 & 1.1251752 \\
+\bottomrule \DIFaddbeginFL \\
+\DIFaddendFL \end{tabularx}
+\end{table}
+\unskip
+
+% Se puede observar que el hospital 3, contiene el mejor factor de atención, acorde a la especialidad de cardiología, requerida por el usuario creado en este escenario.
+
+According to \DIFdelbegin \DIFdel{previous results }\DIFdelend \DIFaddbegin \DIFadd{results presented }\DIFaddend in Table 2, the medical facility \DIFdelbegin \DIFdel{$mf_{2}$ }\DIFdelend \DIFaddbegin \DIFadd{$mf_{3}$ }\DIFaddend contains the best care factor, considering the cardiology specialty required by the user created in this scenario. \DIFaddbegin \DIFadd{These results were obtained by combining the arrival time (in this example from Google Maps), the number of medical doctors, their specialties, and the semantic similarity by applying a similarity metric. In a parallel process, as explained in Table 1, the preferences changed in one-criteria selection. For instance, based on arrival time, the best option is $mf_2$, followed by hospitals $mf_1,\ mf_4$,\ and $mf_3$. By using the specialties and similarity metric, the recommendation list is $mf_2,\ mf_1,\ mf_3$,\ and $mf_4$ (the last two items changed). Now, by computing the attention factor and determining the normalized scalar value, the best option is $mf_3$ (the recommendation list is $mf_3,\ mf_4,\ mf_1$,\ and $mf_2$.
+}\DIFaddend 
+
+%En la siguiente Figura \ref{figure_query_one} se muestra un extracto de la información relevante del archivo de respuesta en formato JSON, que se obtiene utilizando Google Directions API, tomando como parámetros para la consulta, el origen con coordenadas(19.503147,-99.147667), mientras que un centro hospitalario con coordenadas (19.4663758,-99.147163). En esta respuesta, se puede extraer información descriptiva con indicaciones para el trayecto a seguir para llegar al punto de interés.
+
+Figure \ref{figure_query_one} shows an extract of the relevant information from the response file in JSON format, which is obtained using the Google Directions API, taking as parameters for the query: the origin with coordinates (19.503147,-99.147667), being a medical facility with coordinates (19.4663758,-99.147163). This response extracts descriptive information with indications of the path to follow \DIFdelbegin \DIFdel{reaching }\DIFdelend \DIFaddbegin \DIFadd{to reach }\DIFaddend the point of interest.
+
+\begin{figure}[H]
+\DIFdelbeginFL %DIFDELCMD < \includegraphics[width=10.5 cm]{result_directions_api.png}
+%DIFDELCMD < %%%
+\DIFdelendFL %DIF > \includegraphics[width=10.5 cm]{fig03.png}
+\DIFaddbeginFL \lstinputlisting{route_data.json}
+\DIFaddendFL \caption{Query result in JSON format obtained using Google Directions API. \\\label{figure_query_one}}
+\end{figure}
+\unskip
+
+To calculate the estimated time for arrival, the user can select one of the following options: 'driving', 'walking', and 'bicycle'. The next two figures depict the result of computing the optimal route.
+
+%Para calcular el tiempo estimado para el tiempo de arribo, se puede seleccionar alguna de las siguientes opciones: Driving, Walking, Bycicle. En las siguientes dos figuras se muestra el resultado del cálculo de la ruta óptima.
+
+\begin{figure}[H]
+\includegraphics[width=10.5 cm]{ruta_uno.png}
+\caption{Visualization of \DIFaddbeginFL \DIFaddFL{the }\DIFaddendFL route. Case 1.\label{figure_ruta_uno}}
+\end{figure}
+\DIFdelbegin %DIFDELCMD < \unskip
+%DIFDELCMD < %%%
+\DIFdelend %DIF > \unskip
+
+\begin{figure}[H]
+\includegraphics[width=10.5 cm]{ruta_dos.png}
+\caption{Visualization of \DIFaddbeginFL \DIFaddFL{the }\DIFaddendFL route. Case 2.\label{figure_ruta_dos}}\DIFaddbeginFL \\
+\DIFaddendFL \end{figure}
+%DIF > \unskip
+\DIFaddbegin 
+
+{\DIFadd{A comparative result is described in Table \ref{table_comparative_results}, which contains the arrival time obtained (as a manual process) using the Google Maps and Waze applications. Unfortunately, these applications do not publish the collaborative information obtained from users, we can only get the arrival time at the moment of the query. According to Google Maps, applying an ascending sorting process and taking into account the arrival time, the medical facilities are $mf_2, mf_1, mf_4,$ and $mf_3$. On the other hand, to obtain the same information in Waze, the sorting process is $mf_2, mf_3, mf_1,$ and $mf_4$. Finally, computing the proposed normalized attention factor, the result is $mf_3, mf_4, mf_1,$ and $mf_2$.}} \\
+
+\begin{table}[H] 
+\caption{\DIFaddFL{Comparative process using Google Maps, Waze App, and the proposed method.}\label{table_comparative_results}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\begin{tabularx}{\textwidth}{CCCCCCC}
+\toprule
+\textbf{\DIFaddFL{Hospital}} & \textbf{\DIFaddFL{Arrival time (Google Maps)}} & \textbf{\DIFaddFL{Ranking}} & \textbf{\DIFaddFL{Arrival Time (Wazee)}} & \textbf{\DIFaddFL{Ranking}} & \textbf{\DIFaddFL{Proposed Algorithm}} & \textbf{\DIFaddFL{Ranking}} \\
+\midrule
+\DIFaddFL{$mf_{1}$ }& \DIFaddFL{12 }& \DIFaddFL{2 }& \DIFaddFL{13 }& \DIFaddFL{3 }& \DIFaddFL{1.1460293 }& \DIFaddFL{3 }\\
+\DIFaddFL{$mf_{2}$ }& \DIFaddFL{10 }& \DIFaddFL{1 }& \DIFaddFL{11 }& \DIFaddFL{1 }& \DIFaddFL{1.4720069 }& \DIFaddFL{4 }\\
+\DIFaddFL{$mf_{3}$ }& \DIFaddFL{15 }& \DIFaddFL{4 }& \DIFaddFL{12 }& \DIFaddFL{2 }& \DIFaddFL{0.0000000 }& \DIFaddFL{1 }\\
+\DIFaddFL{$mf_{4}$ }& \DIFaddFL{13 }& \DIFaddFL{3 }& \DIFaddFL{14 }& \DIFaddFL{4 }& \DIFaddFL{1.1251752 }& \DIFaddFL{2 }\\
+\bottomrule \\
+\end{tabularx}
+\end{table}
+\DIFaddend \unskip
+
+\DIFdelbegin \section{\DIFdel{Conclusion and discussion}}
+%DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+\DIFdel{In this }\DIFdelend \DIFaddbegin {\DIFadd{In this sense, we assume that the responsibility of clinicians and public health officials is to emphasize to patients the significance of ongoing attending the medical centers, units, or hospitals to receive appropriate treatments, not only in emergencies but also for continuous and progressive actions to follow diseases. Nevertheless, patient-centered technology has demonstrated an innovative performance in managing and monitoring clinical settings, providing sustainable actions for the well-being of citizens}}\DIFadd{.
+}
+
+\section{\DIFadd{Conclusion and future work}}
+\DIFadd{In this }\DIFaddend paper, we propose a methodological and collaborative architecture to promote the assistance of citizens to medical facilities. The approach consists of a recommender system in which the \DIFdelbegin \DIFdel{metric }\DIFdelend health attention factor \DIFaddbegin \DIFadd{metric }\DIFaddend assesses which medical facility, center, unit, or hospital with \DIFdelbegin \DIFdel{the }\DIFdelend better infrastructure and diverse health specialties is available to bring attention to patients. Thus, the proposed attention factor quantitatively computes the lower \DIFdelbegin \DIFdel{number of patientsat an emergency}\DIFdelend \DIFaddbegin \DIFadd{value concerning the patients' number at a medical crisis (emergency) }\DIFaddend and semantically the number of \DIFdelbegin \DIFdel{medical specialties , as well as }\DIFdelend \DIFaddbegin \DIFadd{health specialties and }\DIFaddend the economic costs for the medical service. In addition, the geographic location ranks the medical facilities according to the user profile of the citizens, and the visualization is carried out in a Web-GIS application.
+
+As collateral findings, we conclude that the efficient control of traffic congestion addressed the access to hospitals and facilities to provide health services according to geographic location and medical specialties. So, it is a critical challenge that highly urbanized spaces such as Mexico City are facing. While such unexpected events are tough to avoid, novel computation and quick broadcast information about alternative routes could be the only way to decrease the loss of lives in health emergencies and services. 
+
+Thus, medical emergency responses require quick and reliable access and optimal routing. We know that road networks in a megalopolis are becoming increasingly complex, and the density of traffic congestion are rising continuously at least in Mexico City. Indeed, recommender systems \DIFaddbegin \DIFadd{in the healthcare context }\DIFaddend should be oriented towards improving health services by incorporating filtering approaches to \DIFdelbegin \DIFdel{multicriteria }\DIFdelend \DIFaddbegin \DIFadd{multi-criteria }\DIFaddend evaluation for health emergency routing services. Moreover, the new medical necessities require intelligent and automatic decision support considering the dynamic situation around the world.
+
+\DIFaddbegin {\DIFadd{On the other hand, the research limitations of the present approach are oriented toward the dependency on the Google Directions API service to obtain the estimations and approximations for the arrival time to the medical facilities. This occurs because the companies that manage huge data volumes based on volunteered geographic information (VGI) do not share this information, and the data are not open and public. }\DIFaddend In this sense, \DIFdelbegin \DIFdel{we assume that the responsibility of clinicians and public health officials is to emphasize to patients the significance of ongoing attending the medical centers, units, or hospitals to receive appropriate treatments, not only in emergencies but also for continuous and progressive actions to follow diseases. Nevertheless, patient-centered technology has demonstrated an innovative performance in managing and monitoring clinical settings, providing sustainable actions for the well-being of citizens.}\DIFdelend \DIFaddbegin \DIFadd{our recommendation consists of developing frameworks based on VGI and crowd-sensing to generate massive data related to traffic congestion and other connected events. Concerning the semantic similarity measure, it is necessary to incorporate new measures to assess the information retrieval of the medical specialties, such as other semantic similarity measures, but considering the high computational cost. Therefore, we suggest implementing the DIS-C, which is a conceptual distance measure proposed by \mbox{%DIFAUXCMD
+\citet{quintero2019dis} }%DIFAUXCMD
+in this approach to refine the semantic retrieval in the ontology.}}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{Our future efforts }\DIFdelend \DIFaddbegin {\DIFadd{Moreover, our future work }\DIFaddend will be focused on developing m-Health applications, considering the complete infrastructure of medical facilities, establishing mechanisms based on \DIFdelbegin \DIFdel{crowdsensing and crowdfunding }\DIFdelend \DIFaddbegin \DIFadd{crowd-sensing and crowd-funding }\DIFaddend to evaluate massive and collaborative information concerning medical services, and clinical records of patients to generate prediction models based on machine learning methods, and according to the healthcare services required by the citizens. \DIFaddbegin \DIFadd{At the same time, we are developing an approach based on ontology alignment to semantically interoperate with other medical ontologies, such as SNOMED, preserving the integrity of the conceptual representations. The goal is to produce more granularity in the medical specialties concerning information retrieval and offer new recommendations relate to medical treatments, monitoring, and control of certain diseases.}}
+\DIFaddend 
+
+
+%\section{How to Use this Template}
+
+%The template details the sections that can be used in a manuscript. Note that the order and names of article sections may differ from the requirements of the journal (e.g., the positioning of the Materials and Methods section). Please check the instructions on the authors' page of the journal to verify the correct order and names. For any questions, please contact the editorial office of the journal or support@mdpi.com. For LaTeX-related questions please contact latex@mdpi.com.%\endnote{This is an endnote.} % To use endnotes, please un-comment \printendnotes below (before References). Only journal Laws uses \footnote.
+
+% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
+
+%\section{Introduction}
+
+%The introduction should briefly place the study in a broad context and highlight why it is important. It should define the purpose of the work and its significance. The current state of the research field should be reviewed carefully and key publications cited. Please highlight controversial and diverging hypotheses when necessary. Finally, briefly mention the main aim of the work and highlight the principal conclusions. As far as possible, please keep the introduction comprehensible to scientists outside your particular field of research. Citing a journal paper \cite{ref-journal}. Now citing a book reference \cite{ref-book1,ref-book2} or other reference types \cite{ref-unpublish,ref-communication,ref-proceeding}. Please use the command \citep{ref-thesis,ref-url} for the following MDPI journals, which use author--date citation: Administrative Sciences, Arts, Econometrics, Economies, Genealogy, Humanities, IJFS, Journal of Intelligence, Journalism and Media, JRFM, Languages, Laws, Religions, Risks, Social Sciences, Literature.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Materials and Methods}
+
+%Materials and Methods should be described with sufficient details to allow others to replicate and build on published results. Please note that publication of your manuscript implicates that you must make all materials, data, computer code, and protocols associated with the publication available to readers. Please disclose at the submission stage any restrictions on the availability of materials or information. New methods and protocols should be described in detail while well-established methods can be briefly described and appropriately cited.
+
+%Research manuscripts reporting large datasets that are deposited in a publicly avail-able database should specify where the data have been deposited and provide the relevant accession numbers. If the accession numbers have not yet been obtained at the time of submission, please state that they will be provided during review. They must be provided prior to publication.
+
+%Interventionary studies involving animals or humans, and other studies require ethical approval must list the authority that provided approval and the corresponding ethical approval code.
+%\begin{quote}
+%This is an example of a quote.
+%\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Results}
+
+%This section may be divided by subheadings. It should provide a concise and precise description of the experimental results, their interpretation as well as the experimental conclusions that can be drawn.
+%\subsection{Subsection}
+%\subsubsection{Subsubsection}
+
+%Bulleted lists look like this:
+%\begin{itemize}
+%\item	First bullet;
+%\item	Second bullet;
+%\item	Third bullet.
+%\end{itemize}
+
+%Numbered lists can be added as follows:
+%\begin{enumerate}
+%\item	First item; 
+%\item	Second item;
+%\item	Third item.
+%\end{enumerate}
+
+%The text continues here. 
+
+%\subsection{Figures, Tables and Schemes}
+
+%All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, Table~\ref{tab2}, etc.
+
+%\begin{figure}[H]
+%\includegraphics[width=10.5 cm]{Definitions/logo-mdpi}
+%\caption{This is a figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. Figures should be placed in the main text near to the first time they are cited. A caption on a single line should be centered.\label{fig1}}
+%\end{figure}   
+%\unskip
+
+%\begin{table}[H] 
+%\caption{This is a table caption. Tables should be placed in the main text near to the first time they are~cited.\label{tab1}}
+%\newcolumntype{C}{>{\centering\arraybackslash}X}
+%\begin{tabularx}{\textwidth}{CCC}
+%\toprule
+%\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
+%\midrule
+%Entry 1		& Data			& Data\\
+%Entry 2		& Data			& Data\\
+%\bottomrule
+%\end{tabularx}
+%\end{table}
+%\unskip
+
+%\begin{table}[H]
+%\caption{This is a wide table.\label{tab2}}
+%	\begin{adjustwidth}{-\extralength}{0cm}
+%		\newcolumntype{C}{>{\centering\arraybackslash}X}
+%		\begin{tabularx}{\fulllength}{CCCC}
+%			\toprule
+%			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
+%			\midrule
+%			Entry 1		& Data			& Data			& Data\\
+%			Entry 2		& Data			& Data			& Data \textsuperscript{1}\\
+%			\bottomrule
+%		\end{tabularx}
+%	\end{adjustwidth}
+%	\noindent{\footnotesize{\textsuperscript{1} This is a table footnote.}}
+%\end{table}
+
+%\begin{listing}[H]
+%\caption{Title of the listing}
+%\rule{\columnwidth}{1pt}
+%\raggedright Text of the listing. In font size footnotesize, small, or normalsize. Preferred format: left aligned and single spaced. Preferred border format: top border line and bottom border line.
+%\rule{\columnwidth}{1pt}
+%\end{listing}
+
+%Text.
+
+%Text.
+
+%\subsection{Formatting of Mathematical Components}
+
+%This is the example 1 of equation:
+%\begin{linenomath}
+%\begin{equation}
+%a = 1,
+%\end{equation}
+%\end{linenomath}
+%the text following an equation need not be a new paragraph. Please punctuate equations as regular text.
+%% If the documentclass option "submit" is chosen, please insert a blank line before and after any math environment (equation and eqnarray environments). This ensures correct linenumbering. The blank line should be removed when the documentclass option is changed to "accept" because the text following an equation should not be a new paragraph.
+
+%This is the example 2 of equation:
+%\begin{adjustwidth}{-\extralength}{0cm}
+%\begin{equation}
+%a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z
+%\end{equation}
+%\end{adjustwidth}
+
+% Example of a page in landscape format (with table and table footnote).
+%\startlandscape
+%\begin{table}[H] %% Table in wide page
+%\caption{This is a very wide table.\label{tab3}}
+%	\begin{tabularx}{\textwidth}{CCCC}
+%		\toprule
+%		\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}	& \textbf{Title 4}\\
+%		\midrule
+%		Entry 1		& Data			& Data			& This cell has some longer content that runs over two lines.\\
+%		Entry 2		& Data			& Data			& Data\textsuperscript{1}\\
+%		\bottomrule
+%	\end{tabularx}
+%	\begin{adjustwidth}{+\extralength}{0cm}
+%		\noindent\footnotesize{\textsuperscript{1} This is a table footnote.}
+%	\end{adjustwidth}
+%\end{table}
+%\finishlandscape
+
+% Example of a figure that spans the whole page width. The same concept works for tables, too.
+%\begin{figure}[H]
+%\begin{adjustwidth}{-\extralength}{0cm}
+%\centering
+%\includegraphics[width=13.5cm]{Definitions/logo-mdpi}
+%\end{adjustwidth}
+%\caption{This is a wide figure.\label{fig2}}
+%\end{figure}  
+
+%Please punctuate equations as regular text. Theorem-type environments (including propositions, lemmas, corollaries etc.) can be formatted as follows:
+%% Example of a theorem:
+%\begin{Theorem}
+%Example text of a theorem.
+%\end{Theorem}
+
+%The text continues here. Proofs must be formatted as follows:
+
+%% Example of a proof:
+%\begin{proof}[Proof of Theorem 1]
+%Text of the proof. Note that the phrase ``of Theorem 1'' is optional if it is clear which theorem is being referred to.
+%\end{proof}
+%The text continues here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Discussion}
+
+%Authors should discuss the results and how they can be interpreted from the perspective of previous studies and of the working hypotheses. The findings and their implications should be discussed in the broadest context possible. Future research directions may also be highlighted.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Conclusions}
+
+%This section is not mandatory, but can be added to the manuscript if the discussion is unusually long or complex.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Patents}
+
+%This section is not mandatory, but may be added if there are patents resulting from the work reported in this manuscript.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+% Only for the journal Methods and Protocols:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\authorcontributions{Conceptualization, R.Q. and M.T.-R.; methodology, G.G.; software, R.Q. and G.G.; validation, R.Q. and M.T.-R.; formal analysis, R.Q.; investigation, R.Q.; resources, F.M.-R.; data curation, G.G.; writing---original draft preparation, R.Q.; writing---review and editing, M.T.-R.; visualization, R.Q.; supervision, M.T.-R.; project administration, G.G.; funding acquisition, K.T.C. All authors have read and agreed to the published version of the manuscript.}
+
+
+\funding{This work was partially sponsored by the Instituto Politécnico Nacional and the Consejo Nacional de Ciencia y Tecnología under grants 20222091, 20220065, 20221777, and PN-2016/2110 respectively.}
+
+\institutionalreview{Not applicable.}
+
+%\informedconsent{Any research article describing a study involving humans should contain this statement. Please add ``Informed consent was obtained from all subjects involved in the study.'' OR ``Patient consent was waived due to REASON (please provide a detailed justification).'' OR ``Not applicable'' for studies not involving humans. You might also choose to exclude this statement if the study did not involve humans. Written informed consent for publication must be obtained from participating patients who can be identified (including by the patients themselves). Please state ``Written informed consent has been obtained from the patient(s) to publish this paper'' if applicable.}
+
+%\dataavailability{In this section, please provide details regarding where data supporting reported results can be found, including links to publicly archived datasets analyzed or generated during the study. Please refer to suggested Data Availability Statements in section ``MDPI Research Data Policies'' at \url{https://www.mdpi.com/ethics}. If the study did not report any data, you might add ``Not applicable'' here.} 
+
+\acknowledgments{We are thankful to the reviewers for your time and their invaluable and constructive feedback that helped improve the quality of the paper.}
+
+\conflictsofinterest{The authors declare no conflict of interest.} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+%\sampleavailability{Samples of the compounds ... are available from the authors.}
+
+%% Only for journal Encyclopedia
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+
+%\abbreviations{Abbreviations}{
+%The following abbreviations are used in this manuscript:\\
+
+%\noindent 
+%\begin{tabular}{@{}ll}
+%MDPI & Multidisciplinary Digital Publishing Institute\\
+%DOAJ & Directory of open access journals\\
+%TLA & Three letter acronym\\
+%LD & Linear dichroism
+%\end{tabular}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+%\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
+%\appendixstart
+%\appendix
+%\section[\appendixname~\thesection]{}
+%\subsection[\appendixname~\thesubsection]{}
+%The appendix is an optional section that can contain details and data supplemental to the main text---for example, explanations of experimental details that would disrupt the flow of the main text but nonetheless remain crucial to understanding and reproducing the research shown; figures of replicates for experiments of which representative data are shown in the main text can be added here if brief, or as Supplementary Data. Mathematical proofs of results not central to the paper can be added as an appendix.
+
+%\begin{table}[H] 
+%\caption{This is a table caption.\label{tab5}}
+%\newcolumntype{C}{>{\centering\arraybackslash}X}
+%\begin{tabularx}{\textwidth}{CCC}
+%\toprule
+%\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
+%\midrule
+%Entry 1		& Data			& Data\\
+%Entry 2		& Data			& Data\\
+%\bottomrule
+%\end{tabularx}
+%\end{table}
+
+%\section[\appendixname~\thesection]{}
+%All appendix sections must be cited in the main text. In the appendices, Figures, Tables, etc. should be labeled, starting with ``A''---e.g., Figure A1, Figure A2, etc.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{adjustwidth}{-\extralength}{0cm}
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+%DIF < \reftitle{References}
+\DIFaddbegin \reftitle{References}
+\DIFaddend 
+
+%DIF <  Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
+%DIF <  Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend %=====================================
+% References, variant A: external bibliography
+%=====================================
+%DIF < \bibliography{your_external_BibTeX_file}
+\bibliography{bibliografia_paper}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF < =====================================
+%DIF <  References, variant B: internal bibliography
+%DIF < =====================================
+%DIF < \begin{thebibliography}{999}
+%DIF <  Reference 1
+%DIF < \bibitem[Author1(year)]{ref-journal}
+%DIF < Author~1, T. The title of the cited article. {\em Journal Abbreviation} {\bf 2008}, {\em 10}, 142--149.
+%DIF <  Reference 2
+%DIF < \bibitem[Author2(year)]{ref-book1}
+%DIF < Author~2, L. The title of the cited contribution. In {\em The Book Title}; Editor 1, F., Editor 2, A., Eds.; Publishing House: City, Country, 2007; pp. 32--58.
+%DIF <  Reference 3
+%DIF < \bibitem[Author3(year)]{ref-book2}
+%DIF < Author 1, A.; Author 2, B. \textit{Book Title}, 3rd ed.; Publisher: Publisher Location, Country, 2008; pp. 154--196.
+%DIF <  Reference 4
+%DIF < \bibitem[Author4(year)]{ref-unpublish}
+%DIF < Author 1, A.B.; Author 2, C. Title of Unpublished Work. \textit{Abbreviated Journal Name} year, \textit{phrase indicating stage of publication (submitted; accepted; in press)}.
+%DIF <  Reference 5
+%DIF < \bibitem[Author5(year)]{ref-communication}
+%DIF < Author 1, A.B. (University, City, State, Country); Author 2, C. (Institute, City, State, Country). Personal communication, 2012.
+%DIF <  Reference 6
+%DIF < \bibitem[Author6(year)]{ref-proceeding}
+%DIF < Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of presentation. In Proceedings of the Name of the Conference, Location of Conference, Country, Date of Conference (Day Month Year); Abstract Number (optional), Pagination (optional).
+%DIF <  Reference 7
+%DIF < \bibitem[Author7(year)]{ref-thesis}
+%DIF < Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
+%DIF <  Reference 8
+%DIF < \bibitem[Author8(year)]{ref-url}
+%DIF < Title of Site. Available online: URL (accessed on Day Month Year).
+%DIF < \end{thebibliography}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  If authors have biography, please use the format below
+%DIF < \section*{Short Biography of Authors}
+%DIF < \bio
+%DIF < {\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
+%DIF < {\textbf{Firstname Lastname} Biography of first author}
+%DIF < 
+%DIF < \bio
+%DIF < {\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
+%DIF < {\textbf{Firstname Lastname} Biography of second author}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+%DIF <  To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+%DIF <  To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+\DIFdelend 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{adjustwidth}
+\end{document}
+
